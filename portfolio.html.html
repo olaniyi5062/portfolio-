@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Erukubami Olaniyi John | AI Automation Engineer</title>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px 20px;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+background:radial-gradient(circle,#38bdf8 1px, transparent 1px);
+background-size:40px 40px;
+animation:moveBackground 20s linear infinite;
+opacity:0.15;
+}
+
+@keyframes moveBackground{
+0%{transform:translate(0,0);}
+100%{transform:translate(-200px,-200px);}
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+.profile-pic{
+width:360px;
+height:360px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #38bdf8;
+margin-bottom:20px;
+
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+font-size:18px;
+color:#cbd5f5;
+margin-bottom:25px;
+}
+
+/* BUTTONS */
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:8px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:black;
+box-shadow:0 0 10px #38bdf8;
+}
+
+.btn-primary:hover{
+box-shadow:0 0 20px #38bdf8;
+}
+
+.btn-secondary{
+border:1px solid #38bdf8;
+color:#38bdf8;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:700px;
+margin:auto;
+text-align:center;
+color:#cbd5f5;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.skills span{
+background:#1e293b;
+padding:10px 15px;
+margin:8px;
+border-radius:6px;
+color:#38bdf8;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-6px);
+}
+
+.project iframe{
+width:100%;
+height:220px;
+border:none;
+margin-top:10px;
+border-radius:8px;
+}
+
+/* CERTIFICATE */
+
+.certificate{
+text-align:center;
+}
+
+.certificate img{
+max-width:400px;
+width:100%;
+margin-top:20px;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+text-align:center;
+padding:30px;
+color:#cbd5f5;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav div{
+margin-top:10px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.profile-pic{
+width:140px;
+height:140px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.projects{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>EOJ</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="hero-content">
+
+<img src="profile.png" class="profile-pic">
+
+<h1>Hi, I'm <span>Erukubami Olaniyi</span></h1>
+
+<p>
+Certified AI Automation Engineer building intelligent automation systems,
+AI workflows, and AI agents using n8n, Make.com, and OpenAI APIs.
+</p>
+
+<a href="#projects" class="btn btn-primary">View My Projects</a>
+
+<a href="https://wa.me/2347069706279?text=Hello%20I%20saw%20your%20AI%20automation%20portfolio"
+class="btn btn-secondary">Hire Me</a>
+
+</div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p> <p>
+I am Erukubami Olaniyi, a Certified AI Automation Engineer with a strong passion for building intelligent systems that automate business processes and improve productivity. I specialize in designing and implementing AI-powered workflow automation using tools such as n8n, Make.com, and OpenAI APIs.
+
+My work focuses on helping businesses reduce manual tasks, streamline operations, and make better use of artificial intelligence in their daily workflows. I have built multiple automation systems including lead management systems, Retrieval Augmented Generation (RAG) knowledge systems, AI chatbots, voice AI agents, social media automation tools, smart meeting summarization systems, and automated stock inventory workflows.
+
+I am experienced in integrating automation with platforms such as Google Sheets and Airtable, and I use JavaScript to create custom logic and connect APIs within automation pipelines.
+
+I obtained my certification as an AI Automation Engineer from 10Alytics Business, where I developed practical skills in building scalable automation solutions for modern businesses.
+
+I am continuously improving my expertise in AI development, prompt engineering, and AI-powered application building to create smarter and more efficient automation systems.
+</p>
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<span>n8n Automation</span>
+<span>Make.com Automation</span>
+<span>OpenAI API</span>
+<span>JavaScript</span>
+<span>Google Sheets</span>
+<span>Airtable</span>
+<span>RAG Systems</span>
+<span>Chatbots</span>
+<span>Voice AI Agents</span>
+<span>Social Media Automation</span>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Lead Automation System</h3>
+<p>Automated system for capturing and processing leads.</p>
+<iframe src="lead image.jpg"></iframe>
+</div>
+
+<div class="project">
+<h3>RAG System</h3>
+<p>Retrieval Augmented Generation system for intelligent knowledge search.</p>
+<iframe src="Rag image.jpg"></iframe>
+</div>
+
+<div class="project">
+<h3>ATS System</h3>
+<p>Automated Applicant Tracking System workflow.</p>
+<iframe src="Ats image.jpg"></iframe>
+</div>
+
+<div class="project">
+<h3>Stock Inventory Automation</h3>
+<p>Automatically updates inventory when items are sold.</p>
+<iframe src="inventory image.jpg"></iframe>
+</div>
+
+<div class="project">
+<h3>Voice AI Agent</h3>
+<p>Voice-based AI automation assistant.</p>
+<iframe src="voice chat.jpg"></iframe>
+</div>
+
+<div class="project">
+<h3>Social Media Automation</h3>
+<p>Automated social media posting and content generation.</p>
+<iframe src="youtube.jpg"></iframe>
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATE -->
+
+<section>
+
+<h2>Certification</h2>
+
+<div class="certificate">
+
+<p>Certified AI Automation Engineer – 10Alytics Business</p>
+
+<img src="cert image.jpg">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="contact">
+
+<p>Email: erukubamij@gmail.com</p>
+
+LinkedIn: 
+<a href="https://www.linkedin.com/in/olaniyi-erukubami-6193273a3" 
+target="_blank" style="color:#38bdf8;">
+Visit My Profile
+</a>
+</p>
+
+<a href="tel:+2347069706279" class="btn btn-primary">Call Me</a>
+
+<a href="https://wa.me/2347069706279" class="btn btn-secondary">
+WhatsApp Me
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Erukubami Olaniyi</p>
+
+</footer>
+
+</body>
+
+</html>
